@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Jude\Desktop\projects\django\env3
+set VIRTUAL_ENV=C:\Users\Jude\Desktop\projects\django\carzone\env3
 
 if not defined PROMPT set PROMPT=$P$G
 
