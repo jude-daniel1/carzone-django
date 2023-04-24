@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +39,31 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
+    'cars.apps.CarsConfig',
+    'ckeditor',
+    'django.contrib.humanize',
 ]
+
+JAZZMIN_SETTINGS = {
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    "site_title": "CarZone Admin",
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_header": "Carzone",
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_brand": "Carzone",
+
+    # Logo to use for your site, must be present in static files, used for brand on top left
+    "site_logo": "img/logos/logo.png",
+
+    # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
+    "login_logo": "img/logos/logo.png",
+
+    # Logo to use for login form in dark themes (defaults to login_logo)
+    "login_logo_dark": "img/logos/logo.png",
+
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
